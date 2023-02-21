@@ -38,10 +38,11 @@ it to the JSON list of projects by
 
 {% if "static" in projects[repo]["figure"] %}
 .. image:: https://raw.githubusercontent.com/{{ repo }}/main/src/{{ projects[repo]["figure"] }}
+{% elif "scripts" in projects[repo]["figure"] %}
+https://github.com/{{ repo }}/blob/main/src/{{ projects[repo]["figure"] }}
 {% endif %}
 
 - **Repo:** `{{ repo }} <https://github.com/{{ repo }}>`_
-
   - **Title:** {{ projects[repo]["title"] }}
   - **Authors:** {{ ", ".join(projects[repo]["authors"]) }}
 
