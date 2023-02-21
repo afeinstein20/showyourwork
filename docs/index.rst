@@ -51,7 +51,7 @@ Contents
    logging
    migrating
    faqs
+   projects
    api/showyourwork
    changelog
    attribution
-   projects
