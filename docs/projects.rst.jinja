@@ -33,18 +33,26 @@ it to the JSON list of projects by
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 {% for repo in repos %}
+
 {% if projects[repo]["field"] == field %}
-- `{{ repo }} <https://github.com/{{ repo }}>`_
-    - **Title:** {{ projects[repo]["title"] }}
-    - **Authors:** {{ ", ".join(projects[repo]["authors"]) }}
-{% if projects[repo]["doi"] == "N/A" %}
-    - **DOI:** N/A
-{% else %}
-    - **DOI:** `{{ projects[repo]["doi"] }} <{{ projects[repo]["url"] }}>`_
+
+{% if "static" in projects[repo]["figure"] %}
+.. image:: https://raw.githubusercontent.com/{{ repo }}/main/src/{{ projects[repo]["figure"] }}
 {% endif %}
-    - **Version:** {{ projects[repo]["version"] }}
-    - **Commits:** {{ projects[repo]["commits"] }}
-    - **Last updated:** {{ projects[repo]["date"].split("T")[0] }}
+
+- **Repo:** `{{ repo }} <https://github.com/{{ repo }}>`_
+
+  - **Title:** {{ projects[repo]["title"] }}
+  - **Authors:** {{ ", ".join(projects[repo]["authors"]) }}
+
+{% if projects[repo]["doi"] == "N/A" %}
+  - **DOI:** N/A
+{% else %}
+  - **DOI:** `{{ projects[repo]["doi"] }} <{{ projects[repo]["url"] }}>`_
+{% endif %}
+  - **Version:** {{ projects[repo]["version"] }}
+  - **Commits:** {{ projects[repo]["commits"] }}
+  - **Last updated:** {{ projects[repo]["date"].split("T")[0] }}
 {% endif %}
 {% endfor %}
 

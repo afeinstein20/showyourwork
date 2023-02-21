@@ -27,7 +27,8 @@
     ],
     "doi": "arXiv:2203.08920",
     "url": "https://arxiv.org/abs/2203.08920",
-    "field": "Astronomy"
+    "field": "Astronomy",
+    "figure": "static/surveys.png"
   },
   "kazewong/BackPop": {
     "title": "Backward Population Synthesis: Mapping the Evolutionary History of Gravitational-Wave Progenitors",
@@ -39,7 +40,8 @@
     ],
     "doi": "N/A",
     "url": "",
-    "field": "Astronomy"
+    "field": "Astronomy",
+    "figure":"scripts/figure2_varyAlphaFacc.py"
   },
   "jfcrenshaw/pzflow-paper": {
     "title": "Statistical Modeling of Galaxy Catalogues with Normalizing Flows",
@@ -125,6 +127,21 @@
     ],
     "doi": "10.3847/2041-8213/aca4d3",
     "url": "https://ui.adsabs.harvard.edu/abs/2023ApJ...942L..32R/abstract",
+    "field": "Astronomy"
+  },
+  "afeinstein20/v1298tau_tess": {
+    "title": "V1298 Tau with TESS: Updated Ephemerides, Radii, and Period Constraints from a Second Transit of V1298 Tau e",
+    "authors": [
+      "Adina Feinstein",
+      "Trevor David",
+      "Benjamin Montet",
+      "Daniel Foreman-Mackey",
+      "John Livingston",
+      "Andrew Mann"
+    ],
+    "figure":"static/combined_together.png",
+    "doi": "arXiv:2111.08660",
+    "url": "https://ui.adsabs.harvard.edu/abs/2022ApJ...925L...2F/abstract",
     "field": "Astronomy"
   }
 }
