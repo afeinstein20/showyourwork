@@ -40,8 +40,7 @@
     ],
     "doi": "N/A",
     "url": "",
-    "field": "Astronomy",
-    "figure":"scripts/figure2_varyAlphaFacc.py"
+    "field": "Astronomy"
   },
   "jfcrenshaw/pzflow-paper": {
     "title": "Statistical Modeling of Galaxy Catalogues with Normalizing Flows",
