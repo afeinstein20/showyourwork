@@ -48,9 +48,9 @@ Contents
    config
    snakefile
    action
-   latex
    zenodo
    overleaf
+   latex
    logging
    migrating
    reproducibility
