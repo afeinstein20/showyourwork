@@ -1,5 +1,5 @@
-Migrating from previous versions
-================================
+Updating showyourwork!
+======================
 
 Version ``0.3.0`` introduced several breaking changes, so repositories dependent on previous
 versions need to be modified if you update |showyourwork|. This page contains a list of

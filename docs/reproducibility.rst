@@ -1,5 +1,5 @@
-Reproducibility
-===============
+Philosophy behind the code
+==========================
 
 Coming soon -- a page dedicated to the philosophy behind how |showyourwork| enforces
 reproducibility, what we're actually trying to accomplish in the long run, and what *reproducibility*

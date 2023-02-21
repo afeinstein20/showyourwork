@@ -50,3 +50,8 @@ You should also spend some time browsing through the :doc:`FAQs page <faqs>`. Si
 is itself a work in progress, new features are still being added frequently. If you spot a bug,
 have a question, or would like |showyourwork| to do something it doesn't currently support,
 please feel free to raise a `GitHub issue <https://github.com/showyourwork/showyourwork/issues>`_.
+
+.. toctree::
+   action
+   snakefile
+   reproducibility

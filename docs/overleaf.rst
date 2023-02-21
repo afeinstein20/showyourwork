@@ -1,5 +1,5 @@
-Overleaf integration
-====================
+Overleaf
+========
 
 .. warning::
 

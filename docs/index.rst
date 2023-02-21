@@ -46,14 +46,10 @@ Contents
    cli
    layout
    config
-   snakefile
-   action
-   zenodo
-   overleaf
+   integrations
    latex
    logging
    migrating
-   reproducibility
    faqs
    api/showyourwork
    changelog

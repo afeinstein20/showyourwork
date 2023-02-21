@@ -1,5 +1,5 @@
-Zenodo integration
-==================
+Zenodo
+======
 
 |showyourwork| integrates with the `Zenodo <https://zenodo.org>`_ and
 `Zenodo Sandbox <https://sandbox.zenodo.org>`_ services to

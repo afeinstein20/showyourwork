@@ -1,5 +1,5 @@
-LaTeX stuff
-===========
+Parsing LaTeX
+=============
 
 This page describes how |showyourwork| parses your LaTeX manuscript (by default,
 the file ``src/ms.tex``) and uses it to build your article PDF. While you can
