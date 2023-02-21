@@ -1,3 +1,5 @@
+import sys, os
+sys.path.insert(0, os.path.abspath('.'))
 import hacks
 
 # -- Project information -----------------------------------------------------
@@ -22,7 +24,6 @@ rst_epilog = """
 """
 
 # -- Options for HTML output -------------------------------------------------
-
 html_theme = "sphinx_book_theme"
 html_copy_source = True
 html_show_sourcelink = True
