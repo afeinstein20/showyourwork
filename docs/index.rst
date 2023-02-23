@@ -43,8 +43,8 @@ Contents
    intro
    install
    quickstart
-   cli
    layout
+   cli
    config
    integrations
    latex
