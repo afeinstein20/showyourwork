@@ -130,34 +130,34 @@ sys.path.insert(1, str(ROOT / "showyourwork" / "workflow" / "scripts"))
 
 
 # Generate the `projects.rst` page
-API_KEY = os.getenv("GH_API_KEY", None)
-if API_KEY is None:
-    print("ERROR: Can't authenticate git. Unable to generate `projects.rst`.")
-else:
-    with open("projects.json", "r") as f:
-        projects = json.load(f)
-    for project in projects:
-        projects[project]["date"] = projects[project].get("date", "")
-        projects[project]["doi"] = projects[project].get("doi", "N/A")
-        projects[project]["url"] = projects[project].get("url", "")
-        projects[project]["version"] = get_version(project, API_KEY)
-        projects[project]["commits"] = get_commit_count(project, API_KEY)
-        projects[project]["date"] = get_date(project, API_KEY)
-    fields = list(set([projects[project]["field"] for project in projects]))
-    repos = sorted(projects.keys(), key=lambda item: projects[item]["date"])[
-        ::-1
-    ]
-    count = {field: 0 for field in fields}
-    for project in projects:
-        count[projects[project]["field"]] += 1
-    env = jinja2.Environment(loader=jinja2.FileSystemLoader("."))
-    with open("projects.rst", "w") as f:
-        print(
-            env.get_template("projects.rst.jinja").render(
-                projects=projects, fields=fields, repos=repos, count=count
-            ),
-            file=f,
-        )
+#API_KEY = os.getenv("GH_API_KEY", None)
+#if API_KEY is None:
+#    print("ERROR: Can't authenticate git. Unable to generate `projects.rst`.")
+#else:
+with open("projects.json", "r") as f:
+    projects = json.load(f)
+for project in projects:
+    projects[project]["date"] = projects[project].get("date", "")
+    projects[project]["doi"] = projects[project].get("doi", "N/A")
+    projects[project]["url"] = projects[project].get("url", "")
+    #projects[project]["version"] = get_version(project, API_KEY)
+    #projects[project]["commits"] = get_commit_count(project, API_KEY)
+    #projects[project]["date"] = get_date(project, API_KEY)
+fields = list(set([projects[project]["field"] for project in projects]))
+repos = sorted(projects.keys(), key=lambda item: projects[item]["date"])[
+    ::-1
+]
+count = {field: 0 for field in fields}
+for project in projects:
+    count[projects[project]["field"]] += 1
+env = jinja2.Environment(loader=jinja2.FileSystemLoader("."))
+with open("projects.rst", "w") as f:
+    print(
+        env.get_template("projects.rst.jinja").render(
+            projects=projects, fields=fields, repos=repos, count=count
+        ),
+        file=f,
+    )
 
 
 # Import the GitHub Action README
