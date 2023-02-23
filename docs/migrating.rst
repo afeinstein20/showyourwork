@@ -21,7 +21,6 @@ things you'll want to do when migrating over.
     will persist. The downside is that you won't benefit from newer functionality
     or bugfixes (in case you find issues with |showyourwork|).
 
-
 1. First, install |showyourwork| locally (see :doc:`install`). Prior to ``0.3.0``,
    |showyourwork| was entirely contained in a submodule located in the article
    repository itself. It is now a Python package that can easily be installed with ``pip``.
